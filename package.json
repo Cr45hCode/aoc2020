@@ -1,0 +1,12 @@
+{
+  "name": "aoc2020",
+  "version": "1.3.0",
+  "description": "Solutions for the AoC 2020 challenges",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "author": "Tobias Dobbrunz",
+  "license": "MIT"
+}
