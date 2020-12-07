@@ -5,15 +5,17 @@ import Day1 from './days/01.mjs';
 import Day2 from './days/02.mjs';
 import Day3 from './days/03.mjs';
 import Day4 from './days/04.mjs';
+import Day5 from './days/05.mjs';
 
 const days = {
   1: Day1,
   2: Day2,
   3: Day3,
   4: Day4,
+  5: Day5,
 };
 
-const DAY = 4;
+const DAY = 5;
 
 (async () => {
   try {

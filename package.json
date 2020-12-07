@@ -1,6 +1,6 @@
 {
   "name": "aoc2020",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Solutions for the AoC 2020 challenges",
   "main": "index.js",
   "type": "module",
