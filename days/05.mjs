@@ -48,18 +48,18 @@ export default class Day5 {
     }
     // console.log(seatMap);
 
-    const missingSeats = [];
-    for (let checkRow = 12; checkRow < 127; checkRow += 1) {
+    let ignore = true;
+    for (let checkRow = 0; checkRow < seatMap.length; checkRow += 1) {
       for (let checkCol = 0; checkCol < 8; checkCol += 1) {
-        if(seatMap[checkRow][checkCol] === false) {
-          missingSeats.push({row: checkRow, col: checkCol, id: checkRow * 8 + checkCol})
+        if (seatMap[checkRow][checkCol] !== false) {
+          ignore = false;
+        } else if (!ignore && seatMap[checkRow][checkCol] === false) {
+          return {row: checkRow, col: checkCol, id: checkRow * 8 + checkCol}
         }
       }
     }
-    console.log(missingSeats);
     console.groupEnd('part2');
     return -1;
-    return missingSeats;
   }
 
   static createNumberedArray(size) {
