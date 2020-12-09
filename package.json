@@ -1,11 +1,12 @@
 {
   "name": "aoc2020",
-  "version": "1.9.0",
+  "version": "1.9.1",
   "description": "Solutions for the AoC 2020 challenges",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node ./index.js"
+    "start": "node ./index.js",
+    "ignore-config": "git update-index --assume-unchanged config.json"
   },
   "author": "Tobias Dobbrunz",
   "license": "MIT"
