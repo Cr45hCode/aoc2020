@@ -164,8 +164,6 @@ export default class Day12 {
         default:
           break;
       }
-
-      // console.log({action, value, coords, waypoint});
     }
 
     return coords;
@@ -180,15 +178,6 @@ export default class Day12 {
     return coords;
   }
 
-  // static rotateWaypointBy90Deg(waypoint, cw = true) {
-  //   const newWaypoint = {
-  //     lon: cw ? waypoint.lat : -waypoint.lat,
-  //     lat: cw ? -waypoint.lon : waypoint.lon,
-  //   };
-
-  //   return newWaypoint;
-  // }
-
   static rotateWaypoint(waypoint, deg, cw = true) {
     let tempWaypoint = {...waypoint};
     let newWaypoint = {
@@ -200,7 +189,6 @@ export default class Day12 {
       newWaypoint.lat = cw ? -tempWaypoint.lon : tempWaypoint.lon;
       tempWaypoint = {...newWaypoint};
     }
-    if (deg > 90) console.log({deg, waypoint, newWaypoint});
 
     return newWaypoint;
   }
