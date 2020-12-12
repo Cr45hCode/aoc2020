@@ -10,6 +10,8 @@ import Day6 from './days/06.mjs';
 import Day7 from './days/07.mjs';
 import Day8 from './days/08.mjs';
 import Day9 from './days/09.mjs';
+import Day10 from './days/10.mjs';
+import Day11 from './days/11.mjs';
 
 const days = {
   1: Day1,
@@ -21,9 +23,11 @@ const days = {
   7: Day7,
   8: Day8,
   9: Day9,
+  10: Day10,
+  11: Day11,
 };
 
-const DAY = 9;
+const DAY = 11;
 
 (async () => {
   try {
