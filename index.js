@@ -14,6 +14,7 @@ import Day10 from './days/10.mjs';
 import Day11 from './days/11.mjs';
 import Day12 from './days/12.mjs';
 import Day13 from './days/13.mjs';
+import Day14 from './days/14.mjs';
 
 const days = {
   1: Day1,
@@ -29,6 +30,7 @@ const days = {
   11: Day11,
   12: Day12,
   13: Day13,
+  14: Day14,
 };
 
 const DAY = 12;
